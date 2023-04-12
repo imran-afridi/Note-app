@@ -1,0 +1,78 @@
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  background-color: aqua;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+}
+
+/* note css  */
+
+.note {
+  width: 400px;
+  height: 400px;
+  background-color: #fff;
+  margin: 4rem 1rem;
+}
+
+.note .toolbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: black;
+  color: #fff;
+}
+
+.toolbar .icons i {
+  font-size: 1.4rem;
+  margin: 0 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease-in;
+  user-select: none;
+}
+.icons i:hover {
+  transform: scale(1.2);
+}
+
+/* // add button css  */
+.addBtn {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  padding: 10px 1.4rem;
+  border: 0;
+  background-color: rgba(0, 0, 0, 0.801);
+  color: #fff;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+}
+
+.addBtn:hover {
+  background-color: black;
+}
+
+textarea {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  resize: none;
+  border: 0;
+  font-size: 1.3rem;
+}
+
+textarea:focus {
+  border: 0;
+  outline: 0;
+}
